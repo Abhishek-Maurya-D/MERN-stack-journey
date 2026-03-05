@@ -1,0 +1,28 @@
+#box {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: grey;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#full-box {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(109, 206, 245);
+}

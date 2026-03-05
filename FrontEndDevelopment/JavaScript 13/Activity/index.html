@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global University Finder</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🎓 Global University Finder</h1>
+            <button id="themeToggle" aria-label="Toggle Dark Mode">🌙</button>
+        </header>
+
+        <div class="search-card">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="countryInput" 
+                    placeholder="Enter country name..."
+                    aria-label="Country Name"
+                    autocomplete="off"
+                />
+                <button id="searchBtn">Search</button>
+                <button id="clearBtn" class="clear-btn">Clear</button>
+            </div>
+
+            <p id="errorMessage" class="error"></p>
+            <p id="resultCount" class="result-count"></p>
+
+            <div id="loader" class="loader hidden"></div>
+
+            <ul id="resultsList" class="results"></ul>
+
+            <div class="history">
+                <h3>Recent Searches</h3>
+                <div id="historyContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

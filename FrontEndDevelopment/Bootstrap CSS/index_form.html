@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Using Bootstrap</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Form Demo</h2>
+        <form>
+            <div class="row">
+                <div class="md-3 col">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="text" placeholder="Email-Id" class="form-control" id="Email" />
+                </div>
+
+                <div class="md-3 col">
+                    <label for="Password" class="form-label">Password</label>
+                    <input type="text" placeholder="Enter Your Password" class="form-control" id="Password" />
+                </div>
+            </div>
+            
+            <div class="md-3">
+                <label for="Address" class="form-label">Address</label>
+                <input type="text" placeholder="Address" class="form-control-sn" id="Address"/>
+            </div>
+            
+            <div class="md-3">
+                <select class="form-select">
+                    <option value="" selected>Select Your City</option>
+                    <option value="">Noida</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Delhi</option>
+                    <option value="">Faridabad</option>
+                    <option value="">Meerut</option>
+                </select>
+            </div>
+
+            <div class="normal mb-3">
+                <label for="Agree">Agree</label>
+                <input type="checkbox" id="Agree">
+            </div>
+
+            <div class="mb-3 form-check">
+                <label for="Agree-bs" class="form-check-label">Agree</label>
+                <input type="checkbox" id="Agree-bs" class="form-check-input">
+            </div>
+
+            <div class="mb-3 form-check">
+                <label for="Radio-bs" class="form-check-label">Yes/No</label>
+                <input type="radio" id="Radio-bs" class="form-check-input">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

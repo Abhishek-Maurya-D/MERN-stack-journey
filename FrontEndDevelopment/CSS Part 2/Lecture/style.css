@@ -1,0 +1,29 @@
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a {
+    color: hotpink;
+}
+
+p + h3{
+    text-decoration: underline;
+}
+
+upvote + button {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+div > input{
+    background-color: darkgray;
+}
+
+input[type="text"]{
+    color: green;
+}
+
+input[type="password"]{
+    color: red;
+}

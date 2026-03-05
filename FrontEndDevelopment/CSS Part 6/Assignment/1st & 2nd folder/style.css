@@ -1,0 +1,75 @@
+.container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.header {
+    grid-column: 1 / 13;
+    background-color: red;
+}
+
+.sidebar {
+    grid-column: 1 / 4;
+    grid-row: 2 / 12;
+    background-color: palegreen;
+}
+
+.navigation {
+    grid-column: 4 / 10;
+    background-color: blue;
+}
+
+.ads {
+    grid-column: 10 / 13;
+    grid-row: 2 / 12;
+    background-color: goldenrod;
+}
+
+.main {
+    grid-column: 4 / 10;
+    grid-row: 3 / 12;
+    background-color: lightblue;
+}
+
+.footer {
+    grid-column: 1 / 13;
+    background-color: lightpink;
+}
+
+@media (max-width: 720px) {
+    .header {
+        grid-column: 1 / 13;
+        background-color: red;
+    }
+
+    .navigation {
+        grid-column: 1 / 13;
+        background-color: blue;
+    }
+
+    .sidebar {
+        grid-column: 1 / 4;
+        grid-row: 3 / 12;
+        background-color: palegreen;
+    }
+
+    .main {
+        grid-column: 4 / 13;
+        grid-row: 3 / 12;
+        background-color: lightblue;
+    }
+
+    .ads {
+        grid-column: 1 / 4;
+        grid-row: 12 / 13;
+        background-color: goldenrod;
+    }
+
+    .footer {
+        grid-column: 4 / 13;
+        background-color: lightpink;
+    }
+}
